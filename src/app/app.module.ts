@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { StoriesComponent } from './stories/stories.component';
 import { CreateStoryComponent } from './stories/create-story/create-story.component';
 import { StoryListComponent } from './stories/story-list/story-list.component';
 
@@ -11,7 +10,6 @@ import { StoryListComponent } from './stories/story-list/story-list.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    StoriesComponent,
     CreateStoryComponent,
     StoryListComponent,
   ],
