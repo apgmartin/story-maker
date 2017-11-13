@@ -1,8 +1,20 @@
-<form class="col-xs-4 text-center">
-	<input class="col-xs-12" type="text" name="title" placeholder="Title...">
-	<input class="col-xs-12" type="text" name="who" placeholder="Who...">
-	<input class="col-xs-12" type="text" name="what" placeholder="What...">
-	<input class="col-xs-12" type="text" name="why" placeholder="Why...">
-	<input class="col-xs-12" type="text" name="moreInfo" placeholder="More Info...">
-	<input type="submit" name="submit">
+<form class="col-xs-5 text-left new-story-form">
+	<label class="col-xs-12">Title:
+		<input class="col-xs-9 pull-right" type="text" name="title" [(ngModel)]="title">
+	</label>
+	<label class="col-xs-12">As a:
+		<input class="col-xs-9 pull-right" type="text" name="who" [(ngModel)]="who">
+	</label>
+	<label class="col-xs-12">I want to:
+		<input class="col-xs-9 pull-right" type="text" name="what" [(ngModel)]="what">
+	</label>
+	<label class="col-xs-12">So that I:
+		<input class="col-xs-9 pull-right" type="text" name="why" [(ngModel)]="why">
+	</label>
+	<label class="col-xs-12">More info:
+		<input class="col-xs-9 pull-right" type="text" name="moreInfo" [(ngModel)]="moreInfo">
+	</label>
+	<div class="col-xs-12">
+		<input class="col-xs-4 pull-right" type="submit" name="submit" value="Preview" (click)="previewStory()">
+	</div>
 </form>

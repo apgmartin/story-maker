@@ -1,9 +1,19 @@
-<div class="col-xs-8">
-	<div class="col-xs-12" *ngFor="let story of stories">
-		<h3>{{story.title}}</h3>
-		<p>As a {{story.who}}</p>
-		<p>I want to {{story.what}}</p>
-		<p>So that I {{story.why}}</p>
-		<p>More Info: {{story.moreInfo}}</p>
+<div class="col-xs-7">
+	<div class="col-xs-8 col-xs-offset-2 story-preview" *ngFor="let previewStory of previewStory">
+		<h3 class="col-xs-10">{{previewStory.title}}</h3>
+		<button class="col-xs-2 delete-story" (click)="removePreviewStory()">X</button>
+		<p class="col-xs-12"><strong>As a </strong>{{previewStory.who}}</p>
+		<p class="col-xs-12"><strong>I want to </strong>{{previewStory.what}}</p>
+		<p class="col-xs-12"><strong>So that I </strong>{{previewStory.why}}</p>
+		<p class="col-xs-12"><strong>More Info: </strong>{{previewStory.moreInfo}}</p>
+		<button class="col-xs-3 col-xs-offset-2">Edit</button>
+		<button class="col-xs-3 col-xs-offset-2" (click)="storeStory(previewStory)">Save</button>
+	</div>
+	<div class="col-xs-8 col-xs-offset-2 story-preview" *ngIf="previewStory === []">
+		<h3 class="col-xs-10"></h3>
+		<p class="col-xs-12"><strong>As a </strong></p>
+		<p class="col-xs-12"><strong>I want to </strong></p>
+		<p class="col-xs-12"><strong>So that I </strong></p>
+		<p class="col-xs-12"><strong>More Info: </strong></p>
 	</div>
 </div>

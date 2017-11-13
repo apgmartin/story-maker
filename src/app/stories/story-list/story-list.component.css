@@ -1,0 +1,21 @@
+.story-preview {
+	border: 1px solid #888;
+	background-color: #efeb69;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-bottom: 1em;
+}
+
+.story-preview>h3 {
+	margin-top: 0;
+	border-bottom: 1px solid #aaa;
+	/*text-align: center;*/
+}
+
+.story-preview>p {
+	border-bottom: 1px dotted #aaa;
+}
+
+.delete-story {
+
+}
